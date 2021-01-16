@@ -52,11 +52,5 @@
     "name": "Git",
     "commands": ["git"],
     "docs": "https://git-scm.com/doc"
-  },
-  {
-    "icon": "rust",
-    "name": "Rust",
-    "commands": ["rustc", "rustup", "rustup-init", "cargo"],
-    "docs": "https://www.rust-lang.org/learn"
   }
 ]
