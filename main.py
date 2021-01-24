@@ -36,6 +36,7 @@ while True:
             if cmd in i["commands"]:
                 icon = i
                 break
+
         if not icon:
             icon = {"icon": "console", "name": "Unknown", "commands": [], "docs": None}
 
