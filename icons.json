@@ -1,0 +1,27 @@
+[
+  {
+    "icon": "yarn",
+    "name": "Yarn",
+    "commands": ["yarn"]
+  },
+  {
+    "icon": "python",
+    "name": "Python",
+    "commands": ["python", "python3"]
+  },
+  {
+    "icon": "python-misc",
+    "name": "Python Install",
+    "commands": ["pip", "pip3", "pipenv", "pyenv"]
+  },
+  {
+    "icon": "typescript",
+    "name": "TypeScript",
+    "commands": ["tsc"]
+  },
+  {
+    "icon": "npm",
+    "name": "NPM",
+    "commands": ["npm", "npx"]
+  }
+]
