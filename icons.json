@@ -2,26 +2,49 @@
   {
     "icon": "yarn",
     "name": "Yarn",
-    "commands": ["yarn"]
+    "commands": ["yarn"],
+    "docs": "https://classic.yarnpkg.com/en/docs"
   },
   {
     "icon": "python",
     "name": "Python",
-    "commands": ["python", "python3"]
+    "commands": ["python", "python3"],
+    "docs": "https://docs.python.org"
   },
   {
     "icon": "python-misc",
-    "name": "Python Install",
-    "commands": ["pip", "pip3", "pipenv", "pyenv"]
+    "name": "pip",
+    "commands": ["pip", "pip3"],
+    "docs": "https://pip.pypa.io"
+  },
+  {
+    "icon": "python-misc",
+    "name": "Pipenv",
+    "commands": ["pipenv"],
+    "docs": "https://pipenv.pypa.io"
+  },
+  {
+    "icon": "python-misc",
+    "name": "pyenv",
+    "commands": ["pyenv"],
+    "docs": "https://github.com/pyenv/pyenv"
   },
   {
     "icon": "typescript",
     "name": "TypeScript",
-    "commands": ["tsc"]
+    "commands": ["tsc"],
+    "docs": "https://www.typescriptlang.org/docs"
   },
   {
     "icon": "npm",
     "name": "NPM",
-    "commands": ["npm", "npx"]
+    "commands": ["npm", "npx"],
+    "docs": "https://docs.npmjs.com"
+  },
+  {
+    "icon": "git",
+    "name": "Git",
+    "commands": ["git"],
+    "docs": "https://git-scm.com/doc"
   }
 ]

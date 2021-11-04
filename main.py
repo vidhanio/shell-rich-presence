@@ -16,8 +16,9 @@ while True:
         pid = int(parts[0])
         shell = os.path.split(parts[1])[1]
         pwd = parts[2]
+        time = parts[3]
 
-        extras = 3
+        extras = 4
         cmd = os.path.split(parts[extras])[1]
 
         if len(full_command) > extras + 1:
@@ -31,7 +32,7 @@ while True:
                 icon = i
                 break
         if not icon:
-            icon = {"icon": "console", "name": "Unknown", "commands": []}
+            icon = {"icon": "console", "name": "Unknown", "commands": [], "docs": None}
 
         RPC.update(
             details=f"Command: {' '.join(parts[extras:])}",
@@ -39,7 +40,11 @@ while True:
             large_image=icon["icon"],
             large_text=icon["name"],
             small_image="console",
-            small_text=shell,
+            small_text=f"Shell: {shell}",
+            start=int(time),
+            buttons=[{"label": "View Documentation", "url": icon["docs"]}]
+            if icon["docs"]
+            else None,
         )
     else:
         RPC.clear()
