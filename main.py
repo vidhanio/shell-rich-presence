@@ -1,4 +1,4 @@
-import json, os
+import json, os, psutil
 from pypresence import Presence
 
 RPC = Presence(client_id="905566829408292925")
@@ -9,7 +9,11 @@ with open("icons.json") as f:
 
 while True:
     with open(os.path.expanduser("~/.cache/.shell-rich-presence"), "r") as f:
-        full_commands = [line.strip() for line in f.readlines()]
+        full_commands = [
+            line.strip()
+            for line in [l for l in f.readlines() if l.strip()]
+            if int(line.strip().split()[0]) in psutil.pids()
+        ]
     if full_commands:
         full_command = full_commands[-1]
         parts = full_command.split()
