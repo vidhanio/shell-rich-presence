@@ -14,6 +14,7 @@ while True:
             for line in [l for l in f.readlines() if l.strip()]
             if int(line.strip().split()[0]) in psutil.pids()
         ]
+
     if full_commands:
         full_command = full_commands[-1]
         parts = full_command.split()
