@@ -1,4 +1,4 @@
-import json, os, psutil
+import json, os, psutil, time
 from pypresence import Presence
 
 RPC = Presence(client_id="905566829408292925")
@@ -21,7 +21,7 @@ while True:
         pid = int(parts[0])
         shell = os.path.split(parts[1])[1]
         pwd = parts[2]
-        time = parts[3]
+        time_ = parts[3]
 
         extras = 4
         cmd = os.path.split(parts[extras])[1]
@@ -46,10 +46,12 @@ while True:
             large_text=icon["name"],
             small_image="console",
             small_text=f"Shell: {shell}",
-            start=int(time),
+            start=int(time_),
             buttons=[{"label": "View Documentation", "url": icon["docs"]}]
             if icon["docs"]
             else None,
         )
+
+        time.sleep(15)
     else:
         RPC.clear()
