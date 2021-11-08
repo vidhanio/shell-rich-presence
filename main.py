@@ -1,4 +1,4 @@
-import json, os, psutil, time
+import json, os, psutil
 from pypresence import Presence
 
 RPC = Presence(client_id="905566829408292925")
@@ -51,7 +51,5 @@ while True:
             if icon["docs"]
             else None,
         )
-
-        time.sleep(15)
     else:
         RPC.clear()
