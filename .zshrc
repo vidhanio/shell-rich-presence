@@ -1,5 +1,5 @@
 preexec() {
-    if [ $(echo $1) != "exit" ]; then
+    if [ "$1" != "exit" ]; then
         echo "$$ $SHELL $PWD $EPOCHSECONDS $1" >>"$HOME/.cache/.shell-rich-presence"
     fi
 }
