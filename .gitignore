@@ -1,7 +1,7 @@
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
 
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,python
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,macos,python
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,python,macos,zsh
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,python,macos,zsh
 
 ### macOS ###
 # General
@@ -190,7 +190,36 @@ cython_debug/
 # Support for Project snippet scope
 !.vscode/*.code-snippets
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,python
+### Zsh ###
+# Zsh compiled script + zrecompile backup
+*.zwc
+*.zwc.old
+
+# Zsh completion-optimization dumpfile
+*zcompdump*
+
+# Zsh zcalc history
+.zcalc_history
+
+# A popular plugin manager's files
+._zinit
+.zinit_lstupd
+
+# zdharma/zshelldoc tool's files
+zsdoc/data
+
+# robbyrussell/oh-my-zsh/plugins/per-directory-history plugin's files
+# (when set-up to store the history in the local directory)
+.directory_history
+
+# MichaelAquilina/zsh-autoswitch-virtualenv plugin's files
+# (for Zsh plugins using Python)
+
+# Zunit tests' output
+/tests/_output/*
+!/tests/_output/.gitkeep
+
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,python,macos,zsh
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
