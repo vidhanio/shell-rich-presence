@@ -30,6 +30,12 @@
     "docs": "https://github.com/pyenv/pyenv"
   },
   {
+    "icon": "go",
+    "name": "Go",
+    "commands": ["go"],
+    "docs": "https://golang.org/doc/"
+  },
+  {
     "icon": "typescript",
     "name": "TypeScript",
     "commands": ["tsc"],
