@@ -52,7 +52,7 @@
     "name": "Git",
     "commands": ["git"],
     "docs": "https://git-scm.com/doc"
-  }
+  },
   {
     "icon": "rust",
     "name": "Rust",
